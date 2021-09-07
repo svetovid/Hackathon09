@@ -1,0 +1,44 @@
+ID;Category;Question
+1;DeadPanelGeneric;Panel is not responding
+2;DeadPanelGeneric;It doesn't work
+3;Chatting;How is the weather ouside
+4;Company;In which country are you located
+5;ConnectivityGeneric;I have no signal
+6;ConnectivityGeneric;i cant connect panel to the internet
+7;ConnectivityGeneric;error message: lost connection
+8;AuthenticationGeneric;I can't log in
+9;ErrorMessageGeneric;Fatal error after the application runs
+10;DeadScreenGeneric;Screen went dark
+11;Crash;Splash screen freezes
+12;ProductQuestioniX;What is iX
+13;ProductQuestionGeneric;Where can I get a cable
+14;ProductQuestionGeneric;Do I need a panel
+15;ProductQuestionCables;which cable do use for RS485 communication between 2 panels using modbus driver
+16;ProductQuestioniX;What is an iX project
+17;Supportgeneric;How can I get support
+18;FunnyAnswer;It the panel waterproof
+19;ProductQuestioniX;What is an HMI
+20;SWQuestionGeneric;Is there a simulation mode
+21;Company;I would like to order 1000 of x2 pro 10
+22;ProductQuestioniX;What is a X2 pro 10
+23;ProductPortfolioQuestion;What products do you have
+24;ProductQuestioniX;Do you have panels with bigger screens
+25;FunnyAnswer;Does the panel have sounds
+26;Applications;What can I use your panels for
+27;HW;What processor do you use in your panels
+28;HW;What is the largest size of your panels
+29;SWSecurity;Do you support secure OPCUA
+30;Support;How do I restore image
+31;Company;What is the price of your panel
+32;Support;How to improve efficiency of panels?
+33;SupportGeneric;How can I get help
+34;SWUpdate;How to update softwares on Panels
+35;PanelStartingProblems;Panel keeps restarting
+36;PanelStartingProblems;panel restarts every minute
+37;PanelStartingProblems;My panel won't start
+38;ErrorMessageGeneric;The error message doesn't say anything
+39;PanelStartingProblems;the application crashed after start
+40;SWMultilanguage;The text is too small
+41;Support;How to Customize UI
+42;SWGeneric;I can't swipe between the screens
+43;SWGeneric;The charts are not updating
