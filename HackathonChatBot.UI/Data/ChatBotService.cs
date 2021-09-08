@@ -27,9 +27,9 @@ namespace HackathonChatBot.UI.Data
             {
                 // maybe add Task.Delay(2000) to emulate human's typing
                 var predictionResult = ConsumeModel.Predict(sampleData);
-                Console.WriteLine($"\n\nPredicted Category value {predictionResult.Prediction} \nPredicted Category scores: [{string.Join(",", predictionResult.Score)}]\n\n");
+                Console.WriteLine($"\n\nPredicted Category value {predictionResult.Prediction} \nPredicted Category scores: [{predictionResult.Score.Max()}]\n\n");
 
-                if (predictionResult.Score.FirstOrDefault() < 0.1 && PreviousCategory != "Undefined") 
+                if (predictionResult.Score.Max() < 0.1 && PreviousCategory != "Undefined") 
                 {
                     // return general fallback
                     PreviousCategory = "Undefined";
@@ -37,8 +37,10 @@ namespace HackathonChatBot.UI.Data
                 }
 
                 if (PreviousCategory == predictionResult.Prediction) 
-                { 
-                    // return Fallback or something else
+                {
+                    var key = $"{PreviousCategory}FB";
+                    if (CategoryAnswersMap.TryGetValue(key, out string answer))
+                        return answer;
                 }
 
                 PreviousCategory = predictionResult.Prediction;

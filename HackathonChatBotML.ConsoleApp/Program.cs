@@ -58,7 +58,7 @@ namespace HackathonChatBotML.ConsoleApp
                 testResult.Add($"{question};{correctCategory};{res.Prediction};{string.Join("**", res.Score)}");
             }
 
-            var resultFilePath = Path.Combine(configuration["TestOutputPath"], $"TestOutput-{DateTime.Now.ToString("HHmmss")}.csv");
+            var resultFilePath = Path.Combine(/*configuration["TestOutputPath"],*/ $"TestOutput-{DateTime.Now.ToString("HHmmss")}.csv");
             File.AppendAllLines(resultFilePath, testResult);
         }
     }

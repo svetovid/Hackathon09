@@ -1,8 +1,8 @@
-ID;Category;Question
+﻿ID;Category ;Question
 1;DeadPanelGeneric;Panel is not responding
 2;DeadPanelGeneric;It doesn't work
 3;Chatting;How is the weather ouside
-4;Company;In which country are you located
+4;Company ;In which country are you located
 5;ConnectivityGeneric;I have no signal
 6;ConnectivityGeneric;i cant connect panel to the internet
 7;ConnectivityGeneric;error message: lost connection
@@ -15,13 +15,13 @@ ID;Category;Question
 14;ProductQuestionGeneric;Do I need a panel
 15;ProductQuestionCables;which cable do use for RS485 communication between 2 panels using modbus driver
 16;ProductQuestioniX;What is an iX project
-17;Supportgeneric;How can I get support
+17;SupportGeneric;How can I get support
 18;FunnyAnswer;It the panel waterproof
 19;ProductQuestioniX;What is an HMI
 20;SWQuestionGeneric;Is there a simulation mode
-21;Company;I would like to order 1000 of x2 pro 10
+21;Company ;I would like to order 1000 of x2 pro 10
 22;ProductQuestioniX;What is a X2 pro 10
-23;ProductPortfolioQuestion;What products do you have
+23;ProductPortfolioQuestion ;What products do you have
 24;ProductQuestioniX;Do you have panels with bigger screens
 25;FunnyAnswer;Does the panel have sounds
 26;Applications;What can I use your panels for
@@ -29,7 +29,7 @@ ID;Category;Question
 28;HW;What is the largest size of your panels
 29;SWSecurity;Do you support secure OPCUA
 30;Support;How do I restore image
-31;Company;What is the price of your panel
+31;Company ;What is the price of your panel
 32;Support;How to improve efficiency of panels?
 33;SupportGeneric;How can I get help
 34;SWUpdate;How to update softwares on Panels
@@ -38,7 +38,33 @@ ID;Category;Question
 37;PanelStartingProblems;My panel won't start
 38;ErrorMessageGeneric;The error message doesn't say anything
 39;PanelStartingProblems;the application crashed after start
-40;SWMultilanguage;The text is too small
+40;SWMultilanguageFontSize;The text is too small
 41;Support;How to Customize UI
 42;SWGeneric;I can't swipe between the screens
 43;SWGeneric;The charts are not updating
+44;SWLocalisation;The UI is not in English
+45;SWLocalisation;wrong time on the screen. why?
+46;SWLocalisation;Do you support right-to left languages
+47;SWScreen;How do I change the screen
+48;Chatting;Are you human
+49;Support;Can I call you
+50;Chatting;Are you a chatbot
+51;Chatting;What's your name
+52;Support;Can I talk to a human
+53;Chatting;Can I ask you something
+54;Performance;The panel is too slow
+55;FunnyAnswer;Can bad weather affect the panel performance?
+56;IssueWithPeripherals;cannot write to database
+57;IssueWithPeripherals;cannot write to usb stick
+58;FunnyAnswer;panel is producing strange noise. what it could be?
+59;HW;Does the panel have a touch screen
+60;ProductQuestionPowerSupply;What power supply do I need for a iX T12C
+61;ProductQuestionPowerSupply;How is the panel powered
+62;ProductQuestionPLC;Do I need a PLC
+63;ProductQuestionPLC;PLC is getting heat up continuously
+64;accirroPlus;Can I access panels remotely
+65;accirroPlus;Can I get data from my panels remotely
+66;ReclamationReturn;scratch on the panel. How to get new?
+67;ReclamationReturn;screen is blinking and sometimes I see black screen
+68;ReclamationReturn;I got broken glass on the panel. How do I change it?
+69;Support;How do I access the log file in a iX T12B

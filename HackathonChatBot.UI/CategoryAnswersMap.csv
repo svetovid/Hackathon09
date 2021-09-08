@@ -1,22 +1,32 @@
-Applications;Answer to Applications
-DeadPanelGeneric;Answer to Dead Panel Generic
-chatting;Answer to chatting
-Company;Answer to Company 
-ConnectivityGeneric;Answer to Connectivity Generic
-AuthenticationGeneric;Answer to Authentication Generic
-ErrorMessageGeneric;Answer to Error message Generic
-DeadScreenGeneric;Answer to Dead Screen Generic
-Crash;Answer to Crash
-ProductQuestioniX;Answer to Product Question iX
-Supportgeneric;Answer to Support generic
-FunnyAnswer;Answer to Funny Answer
-SWquestion generic;Answer to SW question generic
-Productportfolio Question ;Answer to Product portfolio Question 
-HW;Answer to HW
-SWSecurity;Answer to SW Security
-Support;Answer to Support
-SWUpdate;Answer to SW Update
-PanelstartingProblems;Answer to Panel starting problems
-ErrormessageGeneric;Answer to Error message Generic
-SWMultilanguage;Answer to SW Multilanguage font size
-SWGeneric;Answer to SW Generic
+﻿Category ;Answer
+DeadPanelGeneric;That is not good. You could try to download our latest software and se if that helps
+Chatting;I am happy that you ask that. My name is Lucy and I am a friendly and clever bot (almost human) that lives in the place where the sun always shines. And I am here to help YOU!
+Company ;If you are intrested in purchasing our product, get in touch with the office closest to you: https://www.beijerelectronics.se/sv-SE/contact___us/Where___to___buy
+ConnectivityGeneric;The first thing I would do in your situation is to check if I have internet conection in the room I am in (wireles or wired)
+AuthenticationGeneric;Even though I would really like to help, this is beyon my powers. You need to get in touch with IT departement at your company
+ErrorMessageGeneric;What deos the error message say?
+DeadScreenGeneric;You could try to restart the panel and se if that helps. Regardless of the outcome, please send an incident report to or support, that helps us get better: https://www.beijerelectronics.se/sv-SE/Support/Contact___support 
+Crash;You could try to restart the panel and se if that helps. Regardless of the outcome, please send an incident report to or support, that helps us get better: https://www.beijerelectronics.se/sv-SE/Support/Contact___support 
+ProductQuestioniX;For more information about iX HMI  please read here: https://www.beijerelectronics.se/sv-SE/Products/software/ix-hmi-software
+ProductQuestionGeneric;Can you be a bit more specific?
+ProductQuestionCables;Please check out following webpage: https://electrical-engineering-portal.com/correct-cabling-modbus-rs485
+SupportGeneric;To learn more about our support please check out this site: https://www.beijerelectronics.se/sv-SE/Support/Support
+FunnyAnswer;Now that, my friend, is a secret! Why do you ask? 
+SWQuestionGeneric;Can you be a bit more specific
+ProductPortfolioQuestion ;Overview of our products can be found here: https://www.beijerelectronics.se/
+Applications;For more information about the applications and industries please check out this site: https://www.beijerelectronics.se/sv-SE/industries--applications/Industries
+HW;For more information about the HMI panels please chech out this page: https://www.beijerelectronics.se/sv-SE/Products/Operator___panels
+SWSecurity;Yes we do for  more info please contact apu.george@beijerelectronics.com
+Support;This is too complex for an AI such as me, please contact a human at: https://www.beijerelectronics.se/sv-SE/Support/Contact___support
+SWUpdate;You could go to our site, log in and download SW from our download site
+PanelStartingProblems;That is not good. You could try to download our latest software and se if that helps
+SWMultilanguageFontSize;In the latest version of iX you can change the size, font and language of your text 
+SWGeneric;That sounds lik a bug to me. Please file an issue to our support : https://www.beijerelectronics.se/sv-SE/Support/Contact___support
+SWLocalisation;The best way to get the right language, time and date format is to change the language that the UI is using
+SWScreen;The best way is probably to look through our knowledge database: https://www.beijerelectronics.se/sv-SE/Support/Help___online
+Performance;That is not good. You could try to download our latest software and se if that helps
+IssueWithPeripherals;The best person to help you with this is Mogge...please get in touch with him at Morgan.Akesson@beijerelectronics.com
+ProductQuestionPowerSupply;The best way to find out about power supplies is tto check out this page: https://www.beijerelectronics.se/sv-SE/Products/Power___supplies
+ProductQuestionPLC;If you wonder about PLCs this might be the best place to read up: https://www.beijerelectronics.se/sv-SE/Products/Control___systems
+accirroPlus;The best way to interact with your panels remotely is throug out cloud solution. Read more about it here: https://www.beijerelectronics.se/sv-SE/Products/Cloud___solutions
+ReclamationReturn;Such a nuisance. Best is probably to get in touch with our closest distributor: https://www.beijerelectronics.se/sv-SE/contact___us/Where___to___buy
