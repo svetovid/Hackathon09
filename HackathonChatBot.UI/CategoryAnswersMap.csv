@@ -1,7 +1,7 @@
-﻿Category ;Answer
+﻿Category;Answer
 DeadPanelGeneric;That is not good. You could try to download our latest software and se if that helps
 Chatting;I am happy that you ask that. My name is Lucy and I am a friendly and clever bot (almost human) that lives in the place where the sun always shines. And I am here to help YOU!
-Company ;If you are intrested in purchasing our product, get in touch with the office closest to you: https://www.beijerelectronics.se/sv-SE/contact___us/Where___to___buy
+Company;If you are intrested in purchasing our product, get in touch with the office closest to you: https://www.beijerelectronics.se/sv-SE/contact___us/Where___to___buy
 ConnectivityGeneric;The first thing I would do in your situation is to check if I have internet conection in the room I am in (wireles or wired)
 AuthenticationGeneric;Even though I would really like to help, this is beyon my powers. You need to get in touch with IT departement at your company
 ErrorMessageGeneric;What deos the error message say?
@@ -30,3 +30,31 @@ ProductQuestionPowerSupply;The best way to find out about power supplies is tto 
 ProductQuestionPLC;If you wonder about PLCs this might be the best place to read up: https://www.beijerelectronics.se/sv-SE/Products/Control___systems
 accirroPlus;The best way to interact with your panels remotely is throug out cloud solution. Read more about it here: https://www.beijerelectronics.se/sv-SE/Products/Cloud___solutions
 ReclamationReturn;Such a nuisance. Best is probably to get in touch with our closest distributor: https://www.beijerelectronics.se/sv-SE/contact___us/Where___to___buy
+ConnectivityGenericFB;Have you already checked the help in iX?
+AuthenticationGenericFB;In this case please contact IT department directly.
+ErrorMessageGenericFB;Are the more messages? What are the other ones?
+DeadScreenGenericFB;Was the restart helpful?
+CrashFB;Was the restart helpful?
+ProductQuestionGenericFB;Do you have some more input for me?
+ProductQuestionCablesFB;Did you check for defect wires or conectors?
+SupportGenericFB;The support is available all the day.
+FunnyAnswerFB;The answer is 42!
+SWQuestionGenericFB;I still need some more information.
+ProductPortfolioQuestionFB;Didn't you find the perfect panel? 
+ApplicationsFB;Have you already checked the manual?
+HWFB;Please contact your sales man.
+SWSecurityFB;Maybe you firewall is blocking communication.
+SupportFB;Did you get help by someone? What is the current state?
+SWUpdateFB;Does the upload work well?
+PanelStartingProblemsFB;Did you already try to restart?
+SWMultilanguageFontSizeFB;Have you selected the correct language?
+SWGenericFB;Do you need more support?
+SWLocalisationFB;Please call our support.
+SWScreenFB;Do you still have trouble?
+PerformanceFB;Do you need a faster panel?
+IssueWithPeripheralsFB;Can you specify again?
+ProductQuestionPowerSupplyFB;Is the LED on the front on?
+ProductQuestionPLCFB;Which model and which firmware do you use?
+accirroPlusFB;Do you have an account?
+ReclamationReturnFB;Please contact our service department. 
+ProductQuestioniXFB;Did you already check the manual?

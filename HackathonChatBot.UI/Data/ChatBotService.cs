@@ -36,16 +36,15 @@ namespace HackathonChatBot.UI.Data
                     return "Can you rephraze your question?";
                 }
 
-                if (PreviousCategory == predictionResult.Prediction) 
-                {
-                    var key = $"{PreviousCategory}FB";
-                    if (CategoryAnswersMap.TryGetValue(key, out string answer))
-                        return answer;
-                }
+                var key = PreviousCategory == predictionResult.Prediction ? 
+                    $"{PreviousCategory}FB" : predictionResult.Prediction;
 
                 PreviousCategory = predictionResult.Prediction;
 
-                return CategoryAnswersMap[predictionResult.Prediction];
+                if (CategoryAnswersMap.TryGetValue(key, out string answer))
+                    return answer;
+                else
+                    return "Could not find any answers!";
             });
         }
     }

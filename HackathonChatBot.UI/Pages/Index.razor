@@ -2,55 +2,63 @@
 
 @using HackathonChatBot.UI.Data
 @inject ChatBotService botService
+@inject IJSRuntime JsRuntime
 
-    <div class="chat-layout">
-        <div class="user-input">
-            <input class="form-control" type="text" @bind="_question" required maxlength="50" @onkeyup="OnPressBtn" />
-            <button class="btn-sm btn-send" @onclick="OnClick"> </button>
-        </div>
-
-        <div class="form-control chat-area">
-            @foreach (var c in _conversation)
-            {
-                <div class="phraze @(c.Side == 1 ? "question" : "answer")">
-                    @if (c.Side == 2) 
-                    {
-                        <div class="support-logo"></div>
-                    }
-                    <div class="talk-bubble round @(c.Side == 1 ? "question" : "answer")">
-                        <div class="talktext">
-                            <p>@c.Text</p>
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
+<div class="chat-layout">
+    <div class="user-input">
+        <input class="form-control" type="text" @bind="_question" required maxlength="50" @onkeyup="OnPressBtn" />
+        <button class="btn-sm btn-send" @onclick="OnClick"> </button>
     </div>
 
-    @code {
-        private string _question;
-        private string _answer;
-        private List<Conversation> _conversation = new List<Conversation>();
-
-        private async Task OnPressBtn(KeyboardEventArgs e)
+    <div class="form-control chat-area" id="chat-area">
+        @foreach (var c in _conversation)
         {
-            if (e.Key == "Enter")
-            {
-                await GetAnswerAsync();
-            }
+            <div class="phraze @(c.Side == 1 ? "question" : "answer")">
+                @if (c.Side == 2)
+                {
+                    <div class="support-logo"></div>
+                }
+                <div class="talk-bubble round @(c.Side == 1 ? "question" : "answer")">
+                    <div class="talktext">
+                        <p>@c.Text</p>
+                    </div>
+                </div>
+            </div>
         }
+    </div>
+</div>
 
-        private async Task OnClick()
+@code {
+    private string _question;
+    private string _answer;
+    private List<Conversation> _conversation = new List<Conversation>();
+
+    private async Task OnPressBtn(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
         {
             await GetAnswerAsync();
         }
-
-        protected async Task GetAnswerAsync()
-        {
-            _conversation.Add(new Conversation { Side = 1, Text = _question });
-            _question = string.Empty;
-
-            _answer = await botService.GetAnswerAsync(_question);
-            _conversation.Add(new Conversation { Side = 2, Text = _answer });
-        }
     }
+
+    private async Task OnClick()
+    {
+        await GetAnswerAsync();
+    }
+
+    protected async Task GetAnswerAsync()
+    {
+        var q = _question;
+        _conversation.Add(new Conversation { Side = 1, Text = q });
+        _question = string.Empty;
+
+        _answer = await botService.GetAnswerAsync(q);
+        _conversation.Add(new Conversation { Side = 2, Text = _answer });
+    }
+
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        JsRuntime.InvokeVoidAsync(identifier: "scrollBottom", "chat-area", 255);
+        return base.OnAfterRenderAsync(firstRender);
+    }
+}
