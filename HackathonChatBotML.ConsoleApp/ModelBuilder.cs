@@ -20,9 +20,13 @@ namespace HackathonChatBotML.ConsoleApp
 
         public static void CreateModel()
         {
+            CreateModel(TRAIN_DATA_FILEPATH, MODEL_FILEPATH);
+        }
+        public static void CreateModel(string trainDataFilePath, string modelFilePath)
+        {
             // Load Data
             IDataView trainingDataView = mlContext.Data.LoadFromTextFile<ModelInput>(
-                                            path: TRAIN_DATA_FILEPATH,
+                                            path: trainDataFilePath,
                                             hasHeader: true,
                                             separatorChar: ';',
                                             allowQuoting: true,
@@ -38,7 +42,7 @@ namespace HackathonChatBotML.ConsoleApp
             Evaluate(mlContext, trainingDataView, trainingPipeline);
 
             // Save model
-            SaveModel(mlContext, mlModel, MODEL_FILEPATH, trainingDataView.Schema);
+            SaveModel(mlContext, mlModel, modelFilePath, trainingDataView.Schema);
         }
 
         public static IEstimator<ITransformer> BuildTrainingPipeline(MLContext mlContext)
