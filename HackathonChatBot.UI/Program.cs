@@ -1,11 +1,5 @@
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace HackathonChatBot.UI
 {
@@ -21,6 +15,9 @@ namespace HackathonChatBot.UI
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+#if !DEBUG
+                    webBuilder.UseUrls("https://localhost:5321/", "http://localhost:5320/");
+#endif
                 });
     }
 }
